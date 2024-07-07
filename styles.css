@@ -1,36 +1,38 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean sans-serif font */
     line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4; /* Light background for better readability */
+    color: #333; /* Dark text on light background */
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background-color: #24292e; /* GitHub's dark header color */
+    color: white;
     padding: 1rem 0;
     text-align: center;
 }
 
-nav {
-    background: #444;
-    color: #fff;
-    padding: 0.5rem 0;
-    text-align: center;
+h1 {
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
+    background-color: #333; /* Dark navigation bar */
+    text-align: center;
 }
 
-nav ul li {
+nav li {
     display: inline;
     margin: 0 1rem;
 }
 
-nav ul li a {
-    color: #fff;
+nav a {
+    color: white;
     text-decoration: none;
 }
 
@@ -42,16 +44,51 @@ section {
     margin-bottom: 2rem;
 }
 
-h1, h2 {
-    color: #fff;
+h2 {
+    color: #24292e; /* GitHub's dark accent color */
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
+/* Specific Styling for Sections */
+#introduction {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#objectives ul {
+    list-style: disc;
+    padding-left: 2rem;
+}
+
+#business-use-cases ol {
+    list-style: decimal;
+    padding-left: 2rem;
+}
+
+#business-use-cases h3 {
+    margin-top: 1rem;
+}
+
+/* Tables */
+table {
     width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    position: fixed; /* Stay at the bottom */
     bottom: 0;
+    width: 100%;
 }
